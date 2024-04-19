@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.quote-display::before,
+.quote-display::after{
+  @apply text-[50px] absolute text-gray-500 
+}
+
+.quote-display::before{
+  content: "❝";
+ @apply top-0 left-0 
+}
+.quote-display::after{
+  content: "❞";
+  @apply bottom-0 right-0 
+}
